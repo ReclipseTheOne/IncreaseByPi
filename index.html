@@ -4,9 +4,11 @@
       var a = 0
       var n = 0
       function IncreaseByPi() {
-      a = a+parseInt(String(Math.PI)[n]);
-      n++;
-      document.getElementById("Line").innerHTML = a;
+        if n != 1 { 
+        a = a+parseInt(String(Math.PI)[n]);
+        n++;
+        document.getElementById("Line").innerHTML = a;
+        }
       }
     </script>
   </head>
