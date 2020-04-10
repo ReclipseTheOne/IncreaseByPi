@@ -2,11 +2,11 @@
   <head>
     <script>
       var a = 0
-      var n = 0
+      var n = -1
       function IncreaseByPi() {
+        n++;
         if (n != 1) { 
           a = a+parseInt(String(Math.PI)[n]);
-          n++;
           document.getElementById("Line").innerHTML = a;
         }
       }
