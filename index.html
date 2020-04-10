@@ -2,13 +2,15 @@
   <head>
     <script>
       var a = 0
-      var n = -1
+      var n = 0
+      var array = [3,1,4,1,5,9,2,6,5,3,5,8,9,7,9,3,2,3,8,4,6,2,6,4,3,3,8,3,2,7,9,5,0,2,8,8,4,1,9,7,1,6,9,3,9,9,3,7,5,1,0]
       function IncreaseByPi() {
-        n++;
-        if (n != 1) { 
-          a = a+parseInt(String(Math.PI)[n]);
-          document.getElementById("Line").innerHTML = a;
-        }
+      a = a + array[n];
+      n++;
+      if(n > array.length) {
+        n = 0;
+      }
+      document.getElementById("Line").innerHTML = a;
       }
     </script>
   </head>
